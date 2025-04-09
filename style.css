@@ -1,0 +1,1878 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.parent {
+  position: relative;
+  background-color: rgba(237, 237, 237, 0.619);
+}
+.right-half {
+  background-color: #275a53;
+  width: 57.5rem;
+  height: 100%;
+  color: white;
+}
+
+.nav {
+  display: flex;
+}
+.interio-image {
+  height: 1.25rem;
+  width: 1.875rem;
+  margin-left: 2rem;
+  margin-right: 0.3125rem;
+}
+.nav {
+  color: white;
+  padding-top: 1%;
+  font-size: 1rem;
+}
+.interio-text {
+  margin-right: 19rem;
+}
+.home {
+  margin-right: 0.3125rem;
+}
+.about {
+  margin-right: 2.5rem;
+  width: 4.2rem;
+  margin-left: 2rem;
+}
+.explore {
+  margin-right: 2.5rem;
+  width: 6rem;
+}
+.shop {
+  margin-right: 2.5rem;
+}
+.headline {
+  margin-top: 6.25rem;
+  font-size: 3rem;
+  color: white;
+  padding-right: 25rem;
+  margin-left: 6.25rem;
+}
+.yellow {
+  color: rgba(255, 208, 0, 0.849);
+}
+.headline-para {
+  margin-left: 6.25rem;
+  padding-right: 28.125rem;
+  margin-top: 1.25rem;
+}
+.btn {
+  padding: 0.625rem;
+  color: white;
+  background-color: rgba(255, 208, 0, 0.849);
+  border: none;
+  margin-left: 6.25rem;
+  margin-top: 1.25rem;
+}
+.arrow {
+  background-color: white;
+  color: black;
+  padding: 0.625rem;
+  margin-left: 0.625rem;
+}
+.images8 {
+  height: 3.125rem;
+  width: 5rem;
+}
+.images8-big {
+  height: 5rem;
+  width: 8rem;
+}
+.images-div {
+  margin-top: 10.625rem;
+  margin-left: 6.25rem;
+}
+.images8 {
+  height: 3.75rem;
+  width: 5.625rem;
+  margin-left: -0.22rem;
+}
+.footer {
+  display: flex;
+}
+.dash {
+  margin-top: 13rem;
+  color: rgba(255, 208, 0, 0.849);
+  font-weight: 900;
+  margin-left: 0.625rem;
+}
+.nav2 {
+  display: flex;
+}
+.numbers {
+  margin-top: 12.2rem;
+}
+.one {
+  font-size: 2rem;
+  padding-top: -1rem;
+}
+.EN {
+  margin-left: 18.75rem;
+  color: black;
+}
+.drop {
+  margin-left: 20rem;
+  color: black;
+  margin-top: -1.25rem;
+  font-size: 1.4rem;
+}
+.bag {
+  margin-left: 21.875rem;
+  color: black;
+  margin-top: -1.5rem;
+  font-size: 1.1rem;
+}
+.gray-box {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: rgb(177, 177, 177);
+  position: absolute;
+  top: 5.3125rem;
+  left: 69.375rem;
+}
+.sofa {
+  width: 37.5rem;
+  height: 25rem;
+  position: absolute;
+  top: 6.3rem;
+  left: 36.875rem;
+}
+.Watch {
+  color: black;
+  position: absolute;
+  top: 29.5rem;
+  left: 65rem;
+  display: flex;
+}
+.Watch-btn {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 0.9375rem 1.25rem;
+  color: black;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+.play {
+  padding: 0.75rem 0.75rem;
+  background-color: rgb(255, 208, 0);
+  position: absolute;
+  top: 29.2rem;
+  left: 71.5rem;
+  color: white;
+  font-size: 1.8rem;
+}
+.img2 {
+  height: 23rem;
+  width: 15rem;
+}
+.img3 {
+  height: 16rem;
+  width: 18rem;
+}
+.img-div {
+  display: flex;
+  gap: 1.6rem;
+}
+.banner2 {
+  margin-top: 8rem;
+  display: flex;
+}
+
+.award {
+  font-size: 3rem;
+}
+.interior-design {
+  font-size: 3rem;
+}
+.design-studio {
+  color: #275a53;
+}
+.sign {
+  height: 4rem;
+  width: 7rem;
+}
+.banner2-text {
+  padding-right: 10rem;
+  margin-top: 2rem;
+}
+.text {
+  margin-left: 6rem;
+}
+.read {
+  padding: 0.75rem;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  border: 1px solid gray;
+  background-color: rgb(255, 208, 0);
+  color: white;
+  margin-top: 2rem;
+}
+.review {
+  background-color: white;
+  color: black;
+  position: absolute;
+  width: 22rem;
+  top: 58.5rem;
+  left: 13rem;
+  line-height: 1.5;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px 2px 10px 1px;
+}
+.review-photo {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+.review-text {
+  font-size: 0.8rem;
+  border-left: 2px solid #004a1c;
+  padding-left: 1rem;
+}
+.star {
+  color: rgb(255, 230, 0);
+}
+.bottom-text {
+  display: flex;
+  margin-top: 1rem;
+}
+.lisa {
+  margin-left: 1rem;
+  font-weight: 600;
+  width: 3.5rem;
+}
+.star-div {
+  margin-left: 7rem;
+}
+.yelp {
+  font-size: 0.8rem;
+  margin-left: -1rem;
+  font-weight: 500;
+  width: 7rem;
+}
+.banner3 {
+  margin-top: 14rem;
+  margin-left: 4.5rem;
+
+  line-height: 1.5;
+  display: flex;
+}
+.banner3-text {
+  width: 20.4rem;
+}
+.projects {
+  color: #275a53;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.world {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.arrow2 {
+  background-color: white;
+  color: black;
+  padding: 0.625rem;
+  margin-left: 0.625rem;
+}
+.btn2 {
+  padding: 0.625rem;
+  color: white;
+  background-color: rgba(255, 208, 0, 0.849);
+  border: none;
+  margin-left: 0.625rem;
+  margin-top: 1.25rem;
+  border: 1px solid gray;
+}
+.images {
+  display: flex;
+  margin-top: -1rem;
+  position: relative;
+  margin-left: 6.6rem;
+}
+.img4 {
+  height: 24rem;
+  width: 16rem;
+}
+.img5 {
+  height: 20rem;
+  width: 16rem;
+  margin-left: 0rem;
+  margin-top: 2rem;
+}
+.img6 {
+  height: 20rem;
+  width: 16rem;
+  margin-left: -0.25rem;
+  margin-top: 2rem;
+}
+.numbering {
+  color: rgb(145, 144, 144);
+  position: absolute;
+  top: 96.5rem;
+  left: 49rem;
+}
+.yellow2 {
+  color: rgb(255, 208, 0);
+  font-weight: 900;
+  font-size: 2rem;
+}
+.green {
+  color: #004a1c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0px 0.5rem;
+}
+.grey {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.Commercial-text {
+  position: absolute;
+  color: white;
+  top: 19rem;
+  left: 1.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.projects2 {
+  position: absolute;
+  top: 21rem;
+  width: 5rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+.residential {
+  position: absolute;
+  top: 17rem;
+  left: 17rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+.projects3 {
+  position: absolute;
+  width: 5rem;
+  top: 19rem;
+  left: 17rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+.kitchen {
+  position: absolute;
+  top: 17rem;
+  left: 33rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+}
+.projects4 {
+  position: absolute;
+  width: 5rem;
+  top: 19rem;
+  left: 33rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+.banner4 {
+  margin-top: 10rem;
+  display: flex;
+}
+.banner4-img {
+  height: 22rem;
+  width: 40rem;
+}
+.logos {
+  background-color: white;
+  height: 8rem;
+  width: 40rem;
+  border: 1px solid gray;
+  margin-top: -0.3rem;
+}
+.banner4-text {
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+.green2 {
+  color: #004a1c;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.make {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.dream {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.bottom-text2 {
+  margin-top: 2rem;
+  width: 21rem;
+}
+.perfect {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.btn3 {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  background-color: white;
+  box-shadow: 1px 2px 6px 1px;
+  margin-top: -1rem;
+}
+.perfect-text {
+  margin: 1.2rem 0rem;
+  margin-left: 2.5rem;
+  color: rgb(148, 148, 148);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.numbering2 {
+  color: #004a1c;
+  font-weight: 600;
+}
+.icons {
+  margin-top: 2rem;
+  margin-left: 8rem;
+  display: flex;
+  gap: 4.3rem;
+  font-size: 1.8rem;
+}
+.circles {
+  margin-left: 8.2rem;
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.icon-text {
+  display: flex;
+  gap: 3rem;
+  margin-left: 8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.banner5 {
+  margin-top: 8rem;
+  display: flex;
+  position: relative;
+}
+.bold {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.price {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 0.5rem;
+}
+.trending-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.banner5-text {
+  margin-left: 4rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+.products {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #004a1c;
+}
+.numbering3 {
+  font-size: 0.9rem;
+  color: rgb(93, 93, 93);
+}
+.arrows {
+  margin-left: 4rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  color: gray;
+  position: absolute;
+  top: 10rem;
+}
+.left {
+  border: 2px solid goldenrod;
+}
+.furniture-images {
+  display: flex;
+  gap: 5.5rem;
+  margin-left: 4rem;
+}
+.lamp {
+  height: 18rem;
+  width: 14rem;
+  margin-left: 5rem;
+}
+.gray-box2 {
+  display: none;
+}
+.jhumar {
+  height: 18rem;
+  width: 14rem;
+  margin-left: 1rem;
+  position: absolute;
+  z-index: 1;
+}
+.sofa2 {
+  height: 18rem;
+  width: 14rem;
+  margin-left: 1rem;
+}
+.chair {
+  height: 18rem;
+  width: 8rem;
+  margin-left: 33.5rem;
+  position: absolute;
+  z-index: 1;
+}
+.Table-lamp {
+  background-color: white;
+  margin-left: 5rem;
+  margin-top: -0.3rem;
+  border-top: none;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+}
+.Single-sofa {
+  background-color: white;
+  margin-left: 1rem;
+  margin-top: -0.3rem;
+  border-top: none;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+}
+.Hanging-lamp {
+  background-color: white;
+  margin-left: 1rem;
+  margin-top: 18rem;
+  border-top: none;
+  padding-top: 1rem;
+  text-align: center;
+  width: 14rem;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+}
+.Wooden {
+  background-color: white;
+  margin-left: 33.5rem;
+  margin-top: 18rem;
+  border-top: none;
+  padding-top: 1rem;
+  text-align: right;
+  width: 8rem;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+}
+.gray-box2 {
+  width: 23.9rem;
+  height: 17rem;
+  background-color: rgb(227, 227, 227);
+  position: absolute;
+  left: 56rem;
+  z-index: 0;
+  top: -4rem;
+}
+.banner6 {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.play-icon {
+  color: rgb(163, 163, 163);
+  text-decoration: none;
+  margin-left: 5rem;
+  margin-right: 0.5rem;
+}
+.banner6-text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 5rem;
+  margin-top: 10rem;
+}
+.green3 {
+  color: #004a1c;
+}
+.banner6-about {
+  padding-right: 52rem;
+  margin-top: 1.6rem;
+  margin-left: 5rem;
+  color: rgb(119, 119, 119);
+  line-height: 1.3;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.green4 {
+  color: #004a1c;
+}
+.underline {
+  color: #004a1c;
+  text-decoration: underline;
+  margin-top: 1.5rem;
+}
+.Learn-link {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+.banner6-image {
+  height: 22rem;
+  width: 32rem;
+  position: absolute;
+  top: -2rem;
+  left: 46.9rem;
+}
+.banner6-play {
+  height: 8rem;
+  width: 21.8rem;
+  background-color: white;
+  position: absolute;
+  left: 43rem;
+  top: 14rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+}
+.play-text {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  padding-right: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.play-video {
+  margin-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  color: gray;
+  font-size: 0.8rem;
+}
+.play-btn {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  color: #004a1c;
+}
+.play-sm {
+  margin-top: -1.8rem;
+  margin-left: 18rem;
+}
+
+.banner7 {
+  margin-top: 10rem;
+}
+.qoutes {
+  height: 5rem;
+  width: 5rem;
+  background-color: goldenrod;
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 1.5rem;
+}
+.qoutes-inner {
+  color: white;
+  text-align: center;
+}
+.banner7 {
+  position: relative;
+  margin-bottom: 5rem;
+}
+.green4 {
+  color: #004a1c;
+}
+.banner7-headline {
+  font-size: 2rem;
+  margin-left: 3.5rem;
+  width: 16.5rem;
+  font-weight: 550;
+}
+.amelia {
+  margin-left: 1rem;
+}
+.amelia2 {
+  margin-left: 1rem;
+  color: gray;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.pd7 {
+  width: 15rem;
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: 2rem;
+}
+.card-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.card {
+  background-color: white;
+  margin-top: 5rem;
+  width: 25rem;
+  text-align: left;
+  padding: 2rem 2rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  margin-bottom: 5rem;
+}
+
+.para {
+  border-left: 2px solid #004a1c;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.card1 {
+  margin-left: 1rem;
+  background-color: white;
+  margin-top: 5rem;
+  width: 25rem;
+  text-align: left;
+  padding: 2rem 2rem;
+  -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  margin-bottom: 5rem;
+}
+
+.card-outer {
+  display: flex;
+  gap: 1rem;
+}
+.flex2 {
+  display: flex;
+}
+.flex2 {
+  margin-top: 1rem;
+}
+.banner8 {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.banner8-flex {
+  display: flex;
+}
+
+.banner8-img {
+  width: 25rem;
+  height: 25rem;
+}
+.banner8-img2 {
+  width: 70rem;
+  height: 25rem;
+}
+.Address2 {
+  color: white;
+  background-color: #124d49e5;
+  width: 70rem;
+  height: 25rem;
+  text-align: center;
+  position: absolute;
+  top: 0rem;
+  left: 24.9rem;
+}
+.address-line {
+  margin-top: 8rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+  margin-left: -5.5rem;
+}
+.second-line {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  margin-left: 23.5rem;
+  width: 19.8rem;
+}
+.div2 {
+  width: 36rem;
+  text-align: left;
+}
+.input-box {
+  width: 15rem;
+  height: 2.3rem;
+  background-color: white;
+  border: none;
+}
+.footer-btn2 {
+  width: 8rem;
+  height: 2.3rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  color: white;
+  background-color: goldenrod;
+  border: none;
+}
+.point {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  background-color: rgba(230, 178, 48, 0.358);
+  /* position: absolute; */
+  /* top: 10rem;
+    left: 30rem;
+    text-align: center; */
+  margin-top: 0.9rem;
+  margin-left: 0.85rem;
+}
+.point2 {
+  background-color: rgb(236, 178, 32);
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: none;
+  margin-top: 0.55rem;
+}
+.point-outer {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: rgba(249, 201, 79, 0.107);
+  border-radius: 50%;
+  position: absolute;
+  top: 9rem;
+  left: 28rem;
+  text-align: center;
+}
+.banner9 {
+  display: flex;
+  gap: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-bottom: 2rem;
+}
+.golden {
+  color: goldenrod;
+}
+.icon-div {
+  background-color: rgba(237, 179, 31, 0.491);
+  padding: 0.1rem 0.1rem;
+}
+.icon-flex {
+  display: flex;
+  gap: 0.3rem;
+}
+.company-div {
+  margin-left: 4rem;
+}
+.banner10 {
+  display: flex;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.interio-image2 {
+  width: 3rem;
+  height: 2rem;
+  margin-left: 8rem;
+  margin-top: -0.5rem;
+}
+.interio-text2 {
+  margin-left: 1rem;
+  padding-top: 0.2rem;
+}
+.copyright {
+  margin-left: 2rem;
+  border-left: 1.5px solid gray;
+  padding-left: 2rem;
+  height: 1.5rem;
+  padding-top: 0.2rem;
+}
+
+.policy-text {
+  margin-left: 17rem;
+  padding-top: 0.2rem;
+}
+.cookies {
+  margin-left: 5rem;
+  padding-top: 0.2rem;
+}
+.terms {
+  margin-left: 5rem;
+  padding-top: 0.2rem;
+}
+li {
+  padding: 0.2rem 0;
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+.first-txt {
+  color: #004a1c;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.arrow-flex {
+  display: flex;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 67rem;
+  gap: 1.5rem;
+}
+.arrow-border {
+  border: 2px solid goldenrod;
+  color: gray;
+}
+
+/* @media (min-width: 1301px) and (max-width: 1500px) {
+  .chair {
+    margin-left: 505px;
+    width: 100px;
+    height: 290px;
+  }
+  .Wooden {
+    margin-left: 505px;
+    margin-top: 290px;
+  }
+} */
+
+@media (min-width: 1024px) and (max-width: 1266px) {
+  .nav {
+    font-size: 0.9rem;
+  }
+  .home {
+    margin-right: 10px;
+  }
+  .EN {
+    margin-left: 150px;
+  }
+
+  .right-half {
+    width: 770px;
+  }
+  .interio-text {
+    margin-right: 90px;
+  }
+  .contact {
+    margin-right: 100px;
+  }
+  .drop {
+    margin-left: 170px;
+  }
+  .bag {
+    margin-left: 200px;
+  }
+  .headline {
+    font-size: 1.9rem;
+  }
+  .headline-para {
+    font-size: 0.6rem;
+  }
+  .sofa {
+    width: 465px;
+    height: 340px;
+    left: 30rem;
+  }
+
+  .gray-box {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: rgb(177, 177, 177);
+    position: absolute;
+    top: 5.3125rem;
+    left: 54.375rem;
+  }
+
+  .gray-box2 {
+    display: none;
+  }
+
+  .Watch {
+    color: black;
+    position: absolute;
+    top: 27.5rem;
+    left: 50rem;
+    display: flex;
+  }
+
+  .play {
+    padding: 0.75rem 0.75rem;
+    background-color: rgb(255, 208, 0);
+    position: absolute;
+    top: 27.4rem;
+    left: 56.5rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .images8-big {
+    height: 70px;
+    width: 90px;
+  }
+  .images8 {
+    height: 50px;
+    width: 70px;
+  }
+  .one {
+    font-size: 20px;
+  }
+  .numbers {
+    font-size: 14px;
+    margin-top: 205px;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 7px;
+  }
+  .award {
+    font-size: 2rem;
+    margin-left: -50px;
+  }
+  .interior-design {
+    font-size: 2rem;
+    margin-left: -50px;
+  }
+  .banner2-text {
+    font-size: 0.7rem;
+    padding-right: 0px;
+    margin-left: -50px;
+    line-height: 1.5;
+    width: 27rem;
+  }
+  .sign {
+    height: 55px;
+    width: 80px;
+    margin-left: -50px;
+  }
+  .blackpink {
+    margin-left: -50px;
+    font-size: 13px;
+  }
+  .read {
+    font-size: 10px;
+    margin-left: -50px;
+    padding: 10px 13px;
+  }
+  .img3 {
+    width: 250px;
+    height: 200px;
+  }
+  .img2 {
+    width: 200px;
+    height: 320px;
+  }
+  .review {
+    width: 300px;
+    height: 150px;
+    top: 820px;
+    left: 175px;
+  }
+  .review-text {
+    font-size: 10px;
+  }
+  .lisa {
+    font-size: 10px;
+  }
+  .review-photo {
+    width: 25px;
+    height: 25px;
+  }
+  .yelp {
+    font-size: 10px;
+  }
+  .star-div {
+    margin-left: 20px;
+  }
+  .projects {
+    font-size: 24px;
+    margin-left: -40px;
+  }
+  .world {
+    font-size: 24px;
+    margin-left: -40px;
+  }
+  .banner3-text {
+    font-size: 12px;
+    margin-left: -40px;
+  }
+  .img4 {
+    margin-left: -80px;
+    width: 220px;
+    height: 354px;
+  }
+  .img5 {
+    width: 215px;
+    height: 300px;
+  }
+  .img6 {
+    width: 210px;
+    height: 300px;
+  }
+  .btn2 {
+    font-size: 10px;
+    padding: 8px;
+    margin-left: -40px;
+  }
+  .arrow2 {
+    padding: 8px;
+  }
+  .Commercial-text {
+    left: -50px;
+    font-size: 16px;
+  }
+  .projects2 {
+    font-size: 10px;
+    margin-left: -60px;
+    top: 325px;
+  }
+  .residential {
+    font-size: 16px;
+    left: 180px;
+  }
+  .projects3 {
+    font-size: 10px;
+    margin-left: -80px;
+    top: 300px;
+  }
+  .kitchen {
+    font-size: 16px;
+    margin-left: -130px;
+    top: 275px;
+  }
+  .projects4 {
+    font-size: 10px;
+    margin-left: -130px;
+    top: 298px;
+  }
+  .numbering {
+    left: 650px;
+    top: 1410px;
+  }
+  .yellow2 {
+    font-size: 25px;
+  }
+  .grey {
+    font-size: 25px;
+  }
+  .green {
+    font-size: 25px;
+  }
+  .banner4-img {
+    width: 580px;
+    height: 292px;
+  }
+  .logos {
+    width: 580px;
+    height: 135px;
+  }
+  .green2 {
+    font-size: 25px;
+    margin-left: -40px;
+  }
+  .make {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  .dream {
+    font-size: 25px;
+    margin-left: -40px;
+  }
+  .perfect {
+    font-size: 20px;
+    margin-left: -40px;
+  }
+  .perfect-text {
+    font-size: 12px;
+    margin-left: -40px;
+    padding-right: 50px;
+  }
+  .trending-text {
+    font-size: 25px;
+  }
+  .products {
+    font-size: 25px;
+  }
+  .numbering3 {
+    font-size: 10px;
+  }
+  .arrows {
+    font-size: 20px;
+  }
+  .lamp {
+    width: 180px;
+    height: 246px;
+    margin-left: 0rem;
+  }
+  .Table-lamp {
+    width: 180px;
+    margin-left: 0px;
+  }
+  .sofa2 {
+    width: 180px;
+    height: 246px;
+    margin-left: 80px;
+  }
+
+  .Single-sofa {
+    background-color: white;
+    margin-left: 80px;
+    margin-top: -0.3rem;
+    border-top: none;
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .jhumar {
+    width: 180px;
+    height: 246px;
+    margin-left: 100px;
+  }
+  .jhumar-div {
+    width: 3rem;
+  }
+  .Hanging-lamp {
+    margin-top: 245px;
+    width: 192px;
+    margin-left: 100px;
+  }
+  .furniture-images {
+    gap: 0px;
+  }
+
+  .chair {
+    margin-left: 418px;
+    width: 100px;
+    height: 256px;
+    display: none;
+  }
+  .Wooden {
+    margin-left: 418px;
+    margin-top: 255px;
+    display: none;
+  }
+  .look {
+    font-size: 25px;
+  }
+  .green1 {
+    font-size: 25px;
+  }
+  .banner6-about {
+    font-size: 10px;
+    padding-right: 575px;
+  }
+  .banner6-image {
+    margin-left: -170px;
+  }
+  .banner6-play {
+    margin-left: -150px;
+    margin-top: 30px;
+  }
+  .qoutes {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+  .banner7-headline {
+    font-size: 26px;
+    margin-left: 45px;
+    padding-right: 10px;
+  }
+  .para {
+    font-size: 11px;
+  }
+  .card-img {
+    height: 38px;
+    width: 38px;
+  }
+  .card1 {
+    width: 294px;
+    height: 180px;
+  }
+  .card {
+    width: 294px;
+    height: 180px;
+  }
+
+  .point-outer {
+    margin-left: 50px;
+    top: 80px;
+  }
+  .banner8-img2 {
+    height: 342px;
+  }
+  .Address2 {
+    top: 0px;
+  }
+  .address-line {
+    font-size: 10px;
+    margin-left: -350px;
+    margin-top: 70px;
+  }
+  .div2 {
+    width: 36rem;
+    text-align: left;
+    margin-left: -100px;
+  }
+  .banner8-img {
+    height: 400px;
+  }
+  .input-box {
+    padding: 12px;
+    width: 210px;
+    height: 11px;
+    margin-left: -230px;
+  }
+  .footer-btn2 {
+    width: 120px;
+    height: 24px;
+  }
+  .second-line {
+    font-size: 26px;
+  }
+  .banner10 {
+    font-size: 10px;
+  }
+  .interio-image2 {
+    margin-left: 65px;
+  }
+  .banner9 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    font-size: 0.6rem;
+  }
+  .explore {
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+  .interio-image {
+    width: 24px;
+    height: 18px;
+  }
+  .home {
+    margin-right: 10px;
+  }
+  .EN {
+    margin-left: 0px;
+  }
+
+  .right-half {
+    width: 570px;
+  }
+  .interio-text {
+    margin-right: 70px;
+  }
+  .contact {
+    margin-right: 100px;
+  }
+  .drop {
+    margin-left: 10px;
+  }
+  .bag {
+    margin-left: 30px;
+    font-size: 14px;
+    margin-top: -20px;
+  }
+  .headline {
+    font-size: 1.4rem;
+    padding-right: 300px;
+    margin-left: 50px;
+  }
+  .headline-para {
+    font-size: 0.6rem;
+    padding-right: 300px;
+    margin-left: 50px;
+  }
+  .dash {
+    font-size: 14px;
+  }
+  .sofa {
+    width: 380px;
+    height: 300px;
+    margin-left: -280px;
+  }
+
+  .gray-box {
+    width: 5.25rem;
+    height: 5.25rem;
+    background-color: rgb(177, 177, 177);
+    position: absolute;
+    top: 5rem;
+    left: 39.5rem;
+  }
+
+  .Watch {
+    color: black;
+    position: absolute;
+    top: 24.9rem;
+    left: 35rem;
+    display: flex;
+  }
+
+  .Watch-btn {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
+    font-size: 11px;
+  }
+
+  .images8-big {
+    height: 60px;
+    width: 80px;
+  }
+  .images8 {
+    height: 40px;
+    width: 60px;
+  }
+  .one {
+    font-size: 18px;
+  }
+  .numbers {
+    font-size: 12px;
+    margin-top: 205px;
+  }
+  .btn {
+    font-size: 0.6rem;
+    padding: 5px;
+    margin-left: 50px;
+  }
+  .arrow {
+    padding: 5px;
+  }
+  .award {
+    font-size: 1.8rem;
+    margin-left: -60px;
+  }
+  .interior-design {
+    font-size: 1.8rem;
+    margin-left: -60px;
+  }
+  .banner2-text {
+    font-size: 0.5rem;
+    padding-right: 25px;
+    margin-left: -60px;
+    line-height: 1.5;
+    width: 21rem;
+  }
+  .sign {
+    height: 45px;
+    width: 70px;
+    margin-left: -65px;
+  }
+  .blackpink {
+    margin-left: -50px;
+    font-size: 10px;
+  }
+  .read {
+    font-size: 10px;
+    margin-left: -50px;
+    padding: 8px 10px;
+  }
+  .img3 {
+    width: 220px;
+    height: 180px;
+  }
+  .img-div {
+    gap: 5px;
+  }
+  .img2 {
+    width: 170px;
+    height: 300px;
+  }
+  .review {
+    width: 270px;
+    height: 120px;
+    top: 755px;
+    left: 148px;
+  }
+  .review-text {
+    font-size: 8px;
+  }
+  .lisa {
+    font-size: 10px;
+  }
+  .review-photo {
+    width: 25px;
+    height: 25px;
+  }
+  .yelp {
+    font-size: 10px;
+  }
+  .star-div {
+    margin-left: 20px;
+  }
+  .projects {
+    font-size: 21px;
+    margin-left: -40px;
+  }
+  .world {
+    font-size: 21px;
+    margin-left: -40px;
+  }
+  .banner3-text {
+    font-size: 9px;
+    margin-left: -40px;
+    padding-right: 90px;
+    margin-top: 20px;
+  }
+  .img4 {
+    margin-left: -180px;
+    width: 170px;
+    height: 314px;
+  }
+  .img5 {
+    width: 170px;
+    height: 260px;
+  }
+  .img6 {
+    width: 170px;
+    height: 260px;
+  }
+  .btn2 {
+    font-size: 8px;
+    padding: 5px;
+    margin-left: -40px;
+  }
+  .arrow2 {
+    padding: 5px;
+  }
+  .Commercial-text {
+    left: -150px;
+    font-size: 12px;
+    top: 270px;
+  }
+  .projects2 {
+    font-size: 10px;
+    margin-left: -160px;
+    top: 285px;
+  }
+  .residential {
+    font-size: 12px;
+    left: 10px;
+    top: 245px;
+  }
+  .projects3 {
+    font-size: 10px;
+    margin-left: -260px;
+    top: 265px;
+  }
+  .kitchen {
+    font-size: 14px;
+    z-index: 3;
+    position: absolute;
+    left: 12rem;
+    top: 15.4rem;
+    color: white;
+  }
+  .projects4 {
+    font-size: 10px;
+    margin-left: -340px;
+    top: 270px;
+    color: white;
+  }
+  .numbering {
+    left: 480px;
+    top: 1282px;
+    font-size: 12px;
+  }
+  .yellow2 {
+    font-size: 20px;
+  }
+  .grey {
+    font-size: 20px;
+  }
+  .green {
+    font-size: 20px;
+  }
+  .banner4-img {
+    width: 480px;
+    height: 267px;
+  }
+  .logos {
+    width: 480px;
+    height: 125px;
+  }
+  .icons {
+    margin-left: 30px;
+    font-size: 25px;
+  }
+  .circles {
+    margin-left: 30px;
+    font-size: 22px;
+    gap: 25px;
+  }
+  .icon-text {
+    margin-left: 25px;
+  }
+  .green2 {
+    font-size: 18px;
+    margin-left: -120px;
+  }
+  .make {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+  .dream {
+    font-size: 18px;
+    margin-left: -120px;
+  }
+  .btn3 {
+    width: 16px;
+    height: 16px;
+  }
+  .numbering2 {
+    font-size: 12px;
+  }
+  .perfect {
+    font-size: 14px;
+    margin-left: -120px;
+  }
+  .perfect-text {
+    font-size: 8px;
+    margin-left: -90px;
+    padding-right: 210px;
+  }
+  .trending-text {
+    font-size: 18px;
+    margin-left: -20px;
+  }
+  .products {
+    font-size: 18px;
+    margin-left: -20px;
+  }
+  .numbering3 {
+    font-size: 8px;
+    margin-left: -20px;
+  }
+  .arrows {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-left: 40px;
+  }
+  .lamp {
+    width: 140px;
+    height: 206px;
+    margin-left: -20px;
+  }
+  .Table-lamp {
+    width: 140px;
+    margin-left: -20px;
+  }
+  .sofa2 {
+    width: 140px;
+    height: 206px;
+  }
+  .jhumar {
+    width: 140px;
+    height: 206px;
+  }
+  .Hanging-lamp {
+    margin-top: 205px;
+    width: 140px;
+  }
+  .furniture-images {
+    gap: 4rem;
+  }
+  .chair {
+    margin-left: 55%;
+    width: 90px;
+    height: 216px;
+    display: none;
+  }
+  .Wooden {
+    margin-left: 230%;
+    margin-top: 205px;
+    display: none;
+  }
+  .look {
+    font-size: 20px;
+  }
+  .green1 {
+    font-size: 20px;
+  }
+  .banner6-about {
+    font-size: 8px;
+    padding-right: 420px;
+  }
+  .banner6-image {
+    margin-left: -350px;
+    width: 370px;
+    height: 300px;
+  }
+  .underline {
+    font-size: 8px;
+  }
+
+  .play {
+    padding: 0.65rem 0.65rem;
+    background-color: rgb(255, 208, 0);
+    position: absolute;
+    top: 24.8rem;
+    left: 41.5rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .play-text {
+    font-size: 10px;
+    padding-right: 60px;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+  .play-video {
+    margin-left: 20px;
+    font-size: 9px;
+    margin-top: -8px;
+  }
+  .play-btn {
+    margin-left: -90px;
+    font-size: 8px;
+    margin-top: -5px;
+  }
+  .banner6-play {
+    margin-left: -350px;
+    margin-top: 0px;
+    width: 280px;
+    height: 90px;
+  }
+  .qoutes {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+  }
+  .banner7-headline {
+    font-size: 20px;
+    margin-left: 33px;
+    padding-right: 80px;
+    margin-top: 10px;
+  }
+  .amelia {
+    font-size: 11px;
+  }
+  .amelia2 {
+    font-size: 9px;
+  }
+  .para {
+    font-size: 8px;
+  }
+  .card-img {
+    height: 28px;
+    width: 28px;
+  }
+  .card1 {
+    width: 274px;
+    height: 160px;
+  }
+  .card {
+    width: 274px;
+    height: 160px;
+  }
+
+  .banner8-img2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 300px;
+    width: 30rem;
+  }
+
+  .banner8-img {
+    margin-top: 0rem;
+    height: 300px;
+    width: 290px;
+  }
+
+  .Address2 {
+    top: 0px;
+    width: 480px;
+    height: 300px;
+    margin-left: -110px;
+  }
+
+  .input-box {
+    padding: 12px;
+    width: 180px;
+    height: 11px;
+    margin-left: 100px;
+    font-size: 10px;
+  }
+  .footer-btn2 {
+    width: 110px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .second-line {
+    font-size: 20px;
+    margin-left: 180px;
+    padding-right: 100px;
+  }
+  .address-line {
+    font-size: 10px;
+    margin-left: 80px;
+    margin-top: 70px;
+  }
+  .point-outer {
+    margin-left: -90px;
+  }
+  .banner10 {
+    font-size: 7px;
+  }
+  .interio-image2 {
+    margin-left: 65px;
+  }
+  .banner9 {
+    gap: 95px;
+    margin-left: 40px;
+  }
+  li {
+    font-size: 8px;
+  }
+  .first-txt {
+    font-size: 10px;
+  }
+  .policy-text {
+    margin-left: 140px;
+  }
+  .interio-image2 {
+    width: 25px;
+    height: 20px;
+    margin-top: -3px;
+  }
+}
+
