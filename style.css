@@ -22,6 +22,10 @@ body {
   color: white;
 }
 
+.contact {
+  color: black;
+}
+
 .nav {
   display: flex;
 }
@@ -132,7 +136,7 @@ body {
 .bag {
   margin-left: 21.875rem;
   color: black;
-  margin-top: -1.5rem;
+  margin-top: -1.6rem;
   font-size: 1.1rem;
 }
 .gray-box {
@@ -409,6 +413,7 @@ body {
   margin-top: -0.3rem;
 }
 .banner4-text {
+  /* text-align: center; */
   margin-left: 10rem;
   margin-top: 1rem;
 }
@@ -478,6 +483,7 @@ body {
 .banner5 {
   margin-top: 8rem;
   display: flex;
+
   position: relative;
 }
 .bold {
@@ -798,8 +804,12 @@ body {
   height: 25rem;
 }
 .banner8-img2 {
-  width: 70rem;
+  position: absolute;
+  top: 0rem;
+  left: 25rem;
+  width: 65rem;
   height: 25rem;
+  /* outline: 2px solid goldenrod; */
 }
 .Address2 {
   color: white;
@@ -874,13 +884,26 @@ body {
 }
 .banner9 {
   display: flex;
-  gap: 10rem;
+  flex-direction: row;
+  gap: 8rem;
   margin-top: 5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid gray;
   margin-left: 4rem;
   margin-right: 4rem;
   padding-bottom: 2rem;
+}
+.first-container {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+.second-container {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
 }
 .golden {
   color: goldenrod;
@@ -894,7 +917,7 @@ body {
   gap: 0.3rem;
 }
 .company-div {
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 .banner10 {
   display: flex;
@@ -954,17 +977,149 @@ li {
   color: gray;
 }
 
-/* @media (min-width: 1301px) and (max-width: 1500px) {
-  .chair {
-    margin-left: 505px;
-    width: 100px;
-    height: 290px;
-  }
-  .Wooden {
-    margin-left: 505px;
-    margin-top: 290px;
-  }
-} */
+/* Mobile Navbar Styles */
+.nav-menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
+  transition: 0.3s;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 90, 83, 0.95);
+  z-index: 1000;
+  display: none;
+  transition: 1s ease-in-out;
+}
+
+.mobile-nav.active {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.mobile-nav-content {
+  background-color: white;
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 0;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.mobile-nav.active .mobile-nav-content {
+  transform: translateX(0);
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-interio-image {
+  height: 30px;
+  width: 45px;
+}
+
+.mobile-interio-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #275a53;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #275a53;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobile-nav-menu {
+  margin-bottom: 2rem;
+}
+
+.mobile-nav-menu div {
+  margin: 1rem 0;
+}
+
+.mobile-nav-menu p {
+  font-size: 1.2rem;
+  color: #275a53;
+  margin: 0;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.mobile-nav-menu p:hover {
+  color: #ffd000;
+}
+
+.mobile-nav-actions {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.mobile-nav-actions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mobile-EN {
+  color: #275a53;
+  font-weight: 600;
+}
+
+.mobile-drop,
+.mobile-bag {
+  color: #275a53;
+  font-size: 1.2rem;
+}
 
 @media (min-width: 1024px) and (max-width: 1266px) {
   .nav {
@@ -974,23 +1129,28 @@ li {
     margin-right: 10px;
   }
   .EN {
-    margin-left: 150px;
+    margin-left: 100px;
   }
 
+  .shop {
+    margin-right: 3.5rem;
+  }
   .right-half {
     width: 770px;
   }
   .interio-text {
     margin-right: 90px;
+    
   }
   .contact {
-    margin-right: 100px;
+    margin-right: 0px;
+    color: black;
   }
   .drop {
-    margin-left: 170px;
+    margin-left: 120px;
   }
   .bag {
-    margin-left: 200px;
+    margin-left: 150px;
   }
   .headline {
     font-size: 1.9rem;
@@ -1398,6 +1558,7 @@ li {
   }
   .interio-text {
     margin-right: 70px;
+    font-size: 1rem;
   }
   .contact {
     margin-right: 100px;
@@ -1832,20 +1993,18 @@ li {
     margin-left: 100px;
     font-size: 10px;
   }
-  .footer-btn2 {
-    width: 110px;
-    height: 25px;
-    font-size: 10px;
+  .footer-btn2 .div2 {
+    width: 36rem;
+    text-align: left;
+    margin-left: -100px;
   }
   .second-line {
     font-size: 20px;
-    margin-left: 180px;
+    margin: 0 auto;
     padding-right: 100px;
-  }
-  .address-line {
-    font-size: 10px;
-    margin-left: 80px;
-    margin-top: 70px;
+    text-align: center;
+    display: block;
+    width: fit-content;
   }
   .point-outer {
     margin-left: -90px;
@@ -1876,3 +2035,1643 @@ li {
   }
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+  /* Mobile Navbar Styles */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .EN,
+  .nav-actions .drop,
+  .nav-actions .bag {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 999;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+
+  /* Existing mobile styles continue... */
+  .explore {
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+  .interio-image {
+    width: 24px;
+    height: 18px;
+  }
+  .home {
+    margin-right: 10px;
+  }
+  .EN {
+    color: white;
+    margin-left: 0px;
+  }
+
+  .right-half {
+    width: 100%;
+    padding-bottom: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .interio-text {
+    margin-right: 70px;
+  }
+  .contact {
+    margin-right: 100px;
+  }
+  .drop {
+    color: white;
+    margin-left: 10px;
+  }
+  .bag {
+    color: white;
+    margin-left: 30px;
+    font-size: 14px;
+    margin-top: -20px;
+  }
+  .space1 {
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+  .headline {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+  }
+  .space2 {
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+  .headline-para {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-right: 0px;
+    margin-left: 0px;
+    white-space: wrap;
+  }
+
+  .dash {
+    margin-top: 6rem;
+    font-size: 1rem;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    height: auto;
+  }
+  .sofa {
+    display: block;
+    position: static;
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+  }
+
+  .gray-box {
+    display: none;
+    width: 5.25rem;
+    height: 5.25rem;
+    background-color: rgba(177, 177, 177, 0.663);
+    position: absolute;
+    top: -45px;
+    left: 645px;
+    z-index: -1;
+  }
+
+  .Watch {
+    display: none;
+    color: black;
+    position: absolute;
+    top: 30.5rem;
+    left: 35rem;
+    display: flex;
+  }
+
+  .Watch-btn {
+    display: none;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
+    font-size: 11px;
+  }
+
+  .images8-big {
+    height: 70px;
+    width: 90px;
+  }
+  .images8 {
+    height: 50px;
+    width: 70px;
+  }
+  .one {
+    font-size: 1.6rem;
+  }
+  .numbers {
+    font-size: 1rem;
+    margin-top: 6rem;
+  }
+  .space {
+    width: 100%;
+    text-align: center;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 0;
+  }
+  .arrow {
+    padding: 5px;
+  }
+  .award {
+    margin-top: 6rem;
+    font-size: 1.8rem;
+    margin-left: 0px;
+  }
+  .interior-design {
+    font-size: 1.8rem;
+    margin-left: 0px;
+  }
+  .images-div {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner2-text {
+    font-size: 0.8rem;
+    padding-right: 0px;
+    margin-left: 0px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 90%;
+  }
+  .bottom-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign {
+    height: 45px;
+    width: 70px;
+    margin-left: 0px;
+  }
+  .blackpink {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .read {
+    width: 70vw;
+    font-size: 1rem;
+    margin-left: 0px;
+    padding: 8px 10px;
+  }
+  .img3 {
+    width: 13rem;
+    height: 20.7rem;
+  }
+  .img-div {
+    gap: 10px;
+  }
+  .img2 {
+    width: 13rem;
+    height: 20.7rem;
+  }
+  .review {
+    position: absolute;
+    width: 18rem;
+    height: auto;
+    top: 22.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1.2rem;
+  }
+
+  .review-text {
+    font-size: 8px;
+  }
+  .bottom-text {
+    margin-top: 0.5rem;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    margin-left: 0;
+    white-space: normal;
+  }
+  .lisa {
+    font-size: 10px;
+  }
+  .review-photo {
+    width: 25px;
+    height: 25px;
+  }
+  .yelp {
+    font-size: 10px;
+  }
+  .star-div {
+    margin-left: 20px;
+  }
+  .projects {
+    font-size: 21px;
+    margin-left: -40px;
+  }
+  .world {
+    font-size: 21px;
+    margin-left: -40px;
+  }
+  .banner3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+  .banner3-text {
+    font-size: 9px;
+    margin-left: -40px;
+    padding-right: 90px;
+    margin-top: 20px;
+  }
+  .img4 {
+    margin-left: -180px;
+    width: 170px;
+    height: 314px;
+  }
+  .img5 {
+    width: 170px;
+    height: 260px;
+  }
+  .img6 {
+    width: 170px;
+    height: 260px;
+  }
+  .btn2 {
+    font-size: 8px;
+    padding: 5px;
+    margin-left: -40px;
+  }
+  .arrow2 {
+    padding: 5px;
+  }
+  .Commercial-text {
+    left: -150px;
+    font-size: 12px;
+    top: 270px;
+  }
+  .projects2 {
+    font-size: 10px;
+    margin-left: -160px;
+    top: 285px;
+  }
+  .residential {
+    font-size: 12px;
+    left: 10px;
+    top: 245px;
+  }
+  .projects3 {
+    font-size: 10px;
+    margin-left: -260px;
+    top: 265px;
+  }
+  .kitchen {
+    font-size: 14px;
+    z-index: 3;
+    position: absolute;
+    left: 12rem;
+    top: 15.4rem;
+    color: white;
+  }
+  .projects4 {
+    font-size: 10px;
+    margin-left: -340px;
+    top: 270px;
+    color: white;
+  }
+  .numbering {
+    display: none;
+    left: 480px;
+    top: 1282px;
+    font-size: 12px;
+  }
+  .yellow2 {
+    font-size: 20px;
+  }
+  .grey {
+    font-size: 20px;
+  }
+  .green {
+    font-size: 20px;
+  }
+  .banner4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .banner4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+  .banner4-img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .logos {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  .icons {
+    margin: 1rem auto;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    gap: 4.1rem;
+  }
+  .circles {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .icon-text {
+    margin: 0 auto;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .green2 {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+  .make {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+  .dream {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+  .btn3 {
+    width: 16px;
+    height: 16px;
+  }
+  .numbering2 {
+    font-size: 12px;
+  }
+  .perfect {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+  .perfect-text {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1.2rem auto;
+    padding-right: 0px;
+    width: 23rem;
+    white-space: wrap;
+  }
+  .trending-text {
+    font-size: 1.5rem;
+    margin-left: -20px;
+  }
+  .products {
+    font-size: 1.5rem;
+    margin-left: -20px;
+  }
+  .numbering3 {
+    font-size: 1rem;
+    margin-left: -20px;
+  }
+  .arrows {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 40px;
+    top: 7rem;
+  }
+  .lamp-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .lamp {
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+  }
+  .Table-lamp {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .sofa2-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .sofa2 {
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+  }
+  .Single-sofa {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .jhumar-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jhumar {
+    position: static;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    /* margin-left: 0px; */
+  }
+  .Hanging-lamp {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .furniture-images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 0;
+  }
+  .chair {
+    margin-left: 55%;
+    width: 90px;
+    height: 216px;
+    display: none;
+  }
+  .Wooden {
+    margin-left: 230%;
+    margin-top: 205px;
+    display: none;
+  }
+  .look {
+    font-size: 1.5rem;
+  }
+  .green1 {
+    font-size: 1.5rem;
+  }
+  .banner5 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .banner6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .banner6-text {
+    margin: 0 auto;
+  }
+  .banner6-about {
+    font-size: 0.7rem;
+    padding-right: 0px;
+    text-align: center;
+    width: 24rem;
+    margin: 0 auto;
+  }
+  .banner6-image-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .banner6-image {
+    position: static;
+    margin-left: 0px;
+    width: 80%;
+    height: auto;
+  }
+  .Learn-link-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Learn-link {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .play-icon {
+    margin-left: 0;
+  }
+  .underline {
+    font-size: 1rem;
+  }
+
+  .play {
+    display: none;
+    padding: 0.65rem 0.65rem;
+    background-color: rgb(255, 208, 0);
+    position: absolute;
+    top: 30.4rem;
+    left: 41.5rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .play-text {
+    font-size: 10px;
+    padding-right: 60px;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+  .play-video {
+    margin-left: 20px;
+    font-size: 9px;
+    margin-top: -8px;
+  }
+  .play-btn {
+    margin-left: -90px;
+    font-size: 8px;
+    margin-top: -5px;
+  }
+  .banner6-play {
+    position: static;
+    margin-left: 0;
+    width: 60%;
+    height: 6rem;
+  }
+  .qoutes {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+  }
+
+  .banner7-headline {
+    font-size: 20px;
+    margin-left: 33px;
+    padding-right: 80px;
+    margin-top: 10px;
+  }
+  .amelia {
+    font-size: 11px;
+  }
+  .amelia2 {
+    font-size: 9px;
+  }
+  .para {
+    font-size: 10px;
+  }
+  .card-outer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img {
+    height: 28px;
+    width: 28px;
+  }
+  .card1 {
+    width: 20rem;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .card {
+    width: 20rem;
+    height: 160px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .banner8 {
+    position: static;
+  }
+  .banner8-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner8-img2 {
+    display: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 300px;
+    width: 30rem;
+  }
+  .image-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-image-container {
+    width: 100%;
+  }
+  .banner8-img {
+    margin-top: 0rem;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .Address2 {
+    position: static;
+    width: 100%;
+    height: 40vh;
+    margin-left: 0px;
+  }
+  .buttons-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+  .input-box {
+    padding: 12px;
+    width: 180px;
+    height: 11px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .footer-btn2 {
+    width: 110px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .address-line {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+  .second-line {
+    font-size: 16px;
+    width: auto;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+  }
+  .point-outer {
+    display: none;
+    margin-left: -90px;
+  }
+  .point {
+    display: none;
+  }
+  .point2 {
+    display: none;
+  }
+  .banner10 {
+    font-size: 7px;
+    justify-content: space-evenly;
+  }
+
+  .banner9 {
+    gap: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .company-div {
+    margin-left: 0;
+  }
+  li {
+    font-size: 0.7rem;
+  }
+  .first-txt {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .policy-text {
+    display: none;
+    margin-left: 3rem;
+    font-size: 0.5rem;
+  }
+  .cookies {
+    display: none;
+    font-size: 0.5rem;
+    margin-left: 2rem;
+  }
+  .interio-image2 {
+    width: 25px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: 0rem;
+  }
+  .interio-text2 {
+    font-size: 0.6rem;
+    margin-left: 1rem;
+  }
+  .copyright {
+    font-size: 0.5rem;
+    white-space: nowrap;
+    margin-left: 2rem;
+  }
+  .terms {
+    font-size: 0.5rem;
+    margin-left: 0rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  /* Mobile Navbar Styles */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .EN,
+  .nav-actions .drop,
+  .nav-actions .bag {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 999;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+
+  /* Existing mobile styles continue... */
+  .explore {
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+  .interio-image {
+    width: 24px;
+    height: 18px;
+  }
+  .home {
+    margin-right: 10px;
+  }
+  .EN {
+    color: white;
+    margin-left: 0px;
+  }
+
+  .right-half {
+    width: 100%;
+    padding-bottom: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .interio-text {
+    margin-right: 70px;
+  }
+  .contact {
+    margin-right: 100px;
+  }
+  .drop {
+    color: white;
+    margin-left: 10px;
+  }
+  .bag {
+    color: white;
+    margin-left: 30px;
+    font-size: 14px;
+    margin-top: -20px;
+  }
+  .space1 {
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+  .headline {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+  }
+  .space2 {
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+  .headline-para {
+    font-size: 0.75rem;
+    text-align: center;
+    padding-right: 0px;
+    margin-left: 0px;
+    white-space: wrap;
+  }
+
+  .dash {
+    margin-top: 6rem;
+    font-size: 0.8rem;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    height: auto;
+  }
+  .sofa {
+    display: block;
+    position: static;
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+  }
+
+  .gray-box {
+    display: none;
+    width: 5.25rem;
+    height: 5.25rem;
+    background-color: rgba(177, 177, 177, 0.663);
+    position: absolute;
+    top: -45px;
+    left: 645px;
+    z-index: -1;
+  }
+
+  .Watch {
+    display: none;
+    color: black;
+    position: absolute;
+    top: 30.5rem;
+    left: 35rem;
+    display: flex;
+  }
+
+  .Watch-btn {
+    display: none;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
+    font-size: 11px;
+  }
+
+  .images8-big {
+    height: 50px;
+    width: 70px;
+  }
+  .images8 {
+    height: 40px;
+    width: 60px;
+  }
+  .one {
+    font-size: 1.2rem;
+  }
+  .numbers {
+    font-size: 0.8rem;
+    margin-top: 6rem;
+  }
+  .space {
+    width: 100%;
+    text-align: center;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 0;
+  }
+  .arrow {
+    padding: 5px;
+  }
+  .award {
+    margin-top: 6rem;
+    font-size: 1.6rem;
+    margin-left: 0px;
+  }
+  .interior-design {
+    font-size: 1.6rem;
+    margin-left: 0px;
+  }
+  .images-div {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner2-text {
+    font-size: 0.7rem;
+    padding-right: 0px;
+    margin-left: 0px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 90%;
+  }
+  .bottom-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign {
+    height: 45px;
+    width: 70px;
+    margin-left: 0px;
+  }
+  .blackpink {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .read {
+    width: 70vw;
+    font-size: 1rem;
+    margin-left: 0px;
+    padding: 8px 10px;
+  }
+  .img3 {
+    width: 9.5rem;
+    height: 15.7rem;
+  }
+  .img-div {
+    gap: 10px;
+  }
+  .img2 {
+    width: 9.5rem;
+    height: 15.7rem;
+  }
+  .review {
+    position: absolute;
+    width: 17rem;
+    height: auto;
+    top: 17.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1.2rem;
+  }
+
+  .review-text {
+    font-size: 8px;
+  }
+  .bottom-text {
+    margin-top: 0.5rem;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    margin-left: 0;
+    white-space: normal;
+  }
+  .lisa {
+    font-size: 10px;
+  }
+  .review-photo {
+    width: 25px;
+    height: 25px;
+  }
+  .yelp {
+    font-size: 10px;
+  }
+  .star-div {
+    margin-left: 20px;
+  }
+  .text-container {
+    text-align: center;
+  }
+  .projects {
+    font-size: 21px;
+  }
+  .world {
+    font-size: 21px;
+    text-align: center;
+  }
+  .banner3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+    margin-left: 0rem;
+  }
+  .banner3-text {
+    font-size: 9px;
+    white-space: wrap;
+    text-align: center;
+    margin: 1rem auto;
+    width: 90%;
+  }
+  .images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .img4 {
+    margin-left: 0px;
+    width: 170px;
+    height: 314px;
+  }
+  .img5 {
+    width: 170px;
+    height: 260px;
+  }
+  .img6 {
+    width: 170px;
+    height: 260px;
+  }
+  .buttons-container {
+    text-align: center;
+    /* margin: 0 auto; */
+  }
+  .btn2 {
+    font-size: 8px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+  .arrow2 {
+    padding: 5px;
+  }
+  .Commercial-text {
+    left: 1rem;
+    font-size: 12px;
+    top: 16.8rem;
+    color: white;
+  }
+  .projects2 {
+    font-size: 10px;
+    margin-left: 0.1rem;
+    top: 17.9rem;
+    color: white;
+  }
+  .residential {
+    font-size: 12px;
+    left: 1rem;
+    top: 35rem;
+    color: white;
+  }
+  .projects3 {
+    font-size: 10px;
+    margin-left: -16rem;
+    top: 36.4rem;
+    color: white;
+  }
+  .kitchen {
+    font-size: 14px;
+    z-index: 3;
+    position: absolute;
+    left: 1rem;
+    top: 52.4rem;
+    color: white;
+  }
+  .projects4 {
+    font-size: 10px;
+    margin-left: -32rem;
+    top: 53.8rem;
+    color: white;
+  }
+  .numbering {
+    display: none;
+    left: 480px;
+    top: 1282px;
+    font-size: 12px;
+  }
+  .yellow2 {
+    font-size: 20px;
+  }
+  .grey {
+    font-size: 20px;
+  }
+  .green {
+    font-size: 20px;
+  }
+  .banner4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .banner4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+  .banner4-img {
+    display: block;
+    width: 83%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .logos {
+    width: 83%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  .icons {
+    margin: 1rem auto;
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    gap: 2.5rem;
+  }
+  .circles {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+    padding-bottom: 0.5rem;
+  }
+  .icon-text {
+    margin: 0 auto;
+    margin-left: 0.5rem;
+    font-size: 0.65rem;
+    gap: 1.3rem;
+  }
+  .green2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  .make {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  .dream {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  .btn3 {
+    width: 16px;
+    height: 16px;
+    margin-left: 1rem;
+  }
+  .numbering2 {
+    font-size: 12px;
+  }
+  .perfect {
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+  .perfect-text {
+    text-align: center;
+    font-size: 0.65rem;
+    margin: 1.2rem auto;
+    padding-right: 2rem;
+    margin-left: 1rem;
+    width: 20rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .trending-text {
+    font-size: 1.5rem;
+    margin-left: -20px;
+  }
+  .products {
+    font-size: 1.5rem;
+    margin-left: -20px;
+  }
+  .numbering3 {
+    font-size: 1rem;
+    margin-left: -20px;
+  }
+  .arrows {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 40px;
+    top: 7rem;
+  }
+  .lamp-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .lamp {
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+  }
+  .Table-lamp {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .sofa2-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .sofa2 {
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+  }
+  .Single-sofa {
+    width: 50%;
+    margin-left: 0px;
+  }
+  .jhumar-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jhumar {
+    position: static;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    /* margin-left: 0px; */
+  }
+  .Hanging-lamp {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .furniture-images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 0;
+  }
+  .chair {
+    margin-left: 55%;
+    width: 90px;
+    height: 216px;
+    display: none;
+  }
+  .Wooden {
+    margin-left: 230%;
+    margin-top: 205px;
+    display: none;
+  }
+  .look {
+    font-size: 1.3rem;
+  }
+  .green1 {
+    font-size: 1.3rem;
+  }
+  .banner5 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .banner6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .banner6-text {
+    margin: 0 auto;
+  }
+  .banner6-about {
+    font-size: 0.6rem;
+    padding-right: 0px;
+    text-align: center;
+    width: 18rem;
+    margin: 0 auto;
+    white-space: normal;
+  }
+  .banner6-image-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .banner6-image {
+    position: static;
+    margin-left: 0px;
+    width: 80%;
+    height: auto;
+  }
+  .Learn-link-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Learn-link {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .play-icon {
+    margin-left: 0;
+  }
+  .underline {
+    font-size: 0.8rem;
+  }
+
+  .play {
+    display: none;
+    padding: 0.65rem 0.65rem;
+    background-color: rgb(255, 208, 0);
+    position: absolute;
+    top: 30.4rem;
+    left: 41.5rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .play-text {
+    font-size: 10px;
+    padding-right: 60px;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+  .play-video {
+    margin-left: 20px;
+    font-size: 9px;
+    margin-top: -8px;
+  }
+  .play-btn {
+    margin-left: -90px;
+    font-size: 8px;
+    margin-top: -5px;
+  }
+  .banner6-play {
+    position: static;
+    margin-left: 0;
+    width: 60%;
+    height: 6rem;
+  }
+  .qoutes {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .banner7-headline {
+    font-size: 18px;
+    margin-left: 24px;
+    padding-right: 90px;
+    margin-top: 10px;
+  }
+  .amelia {
+    font-size: 11px;
+  }
+  .amelia2 {
+    font-size: 9px;
+  }
+  .para {
+    font-size: 10px;
+  }
+  .card-outer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img {
+    height: 28px;
+    width: 28px;
+  }
+  .card1 {
+    width: 18rem;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .card {
+    width: 18rem;
+    height: 160px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .banner8 {
+    position: static;
+  }
+  .banner8-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner8-img2 {
+    display: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 300px;
+    width: 30rem;
+  }
+  .image-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-image-container {
+    width: 99%;
+  }
+  .banner8-img {
+    margin-top: 0rem;
+    height: 45vh;
+    width: 100%;
+  }
+
+  .Address2 {
+    position: static;
+    width: 100%;
+    height: 40vh;
+    margin-left: 0px;
+  }
+  .buttons-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+  .input-box {
+    padding: 12px;
+    width: 180px;
+    height: 11px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .footer-btn2 {
+    width: 110px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .address-line {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+  .second-line {
+    font-size: 16px;
+    width: auto;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+  }
+  .point-outer {
+    display: none;
+    margin-left: -90px;
+  }
+  .point {
+    display: none;
+  }
+  .point2 {
+    display: none;
+  }
+  .banner10 {
+    font-size: 5px;
+    justify-content: space-evenly;
+  }
+
+  .banner9 {
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .company-div {
+    margin-left: 0;
+  }
+  li {
+    font-size: 0.7rem;
+  }
+  .first-txt {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .policy-text {
+    display: none;
+    margin-left: 3rem;
+    font-size: 0.5rem;
+  }
+  .cookies {
+    display: none;
+    font-size: 0.5rem;
+    margin-left: 2rem;
+  }
+  .interio-image2 {
+    width: 25px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: 0rem;
+  }
+  .interio-text2 {
+    font-size: 0.5rem;
+    margin-left: 1rem;
+  }
+  .copyright {
+    font-size: 0.4rem;
+    white-space: nowrap;
+    margin-left: 2rem;
+  }
+  .terms {
+    font-size: 0.4rem;
+    margin-left: 0rem;
+  }
+}
